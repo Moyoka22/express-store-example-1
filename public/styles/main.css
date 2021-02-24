@@ -7,3 +7,12 @@ body {
 .text-center {
   text-align: center;
 }
+
+a {
+  color: #ffc3c3;
+}
+a:visited,
+a:active,
+a:hover {
+  color: #ff8888;
+}
