@@ -1,0 +1,21 @@
+{
+  "name": "express-store-example-1",
+  "version": "0.0.1",
+  "description": "My first express app",
+  "main": "src/app.js",
+  "author": "Moye Odiase",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "@types/node": "^14.14.31",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "nodemon src/index.js"
+  }
+}
