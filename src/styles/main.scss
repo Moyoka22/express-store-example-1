@@ -40,3 +40,29 @@ a {
     list-style: none;
   }
 }
+
+.form-input {
+  display: block;
+  width: 100%;
+  display: flex;
+  padding: 0.5rem;
+  label {
+    width: 33%;
+  }
+  input,
+  textarea {
+    width: 67%;
+    border: 1px solid #ddd;
+  }
+}
+.form-submit {
+  margin: 0.5rem auto;
+  display: block;
+}
+
+.paper {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 2px;
+  color: $theme-contrast-darker;
+}

@@ -10,7 +10,36 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/admin">Admin</a></li>
+            <li><a href="/store">Store</a></li>
+        </ul>
+    </nav>
     <h1>Store Manager</h1>
+    <div style="max-width: 600px;" class="paper">
+        <section>
+            <h2>Store Items</h2>
+        </section>
+        <hr />
+        <section>
+            <h2>Add An Item</h2>
+            <form method="POST" action="/admin/manage/store/create-item">
+                <h3>Create New Item</h3>
+                <div class="form-input">
+                    <label for="new-item-name">Name:</label>
+                    <input id="new-item-name" name="name" type="text" />
+                </div>
+                <div class="form-input">
+                    <label for="new-item-description">Description</label>
+                    <textarea id="new-item-description" name="description"></textarea>
+                </div>
+                <input class="form-submit" type="submit" value="Create" />
+            </form>
+        </section>
+
+    </div>
 
 </body>
 
