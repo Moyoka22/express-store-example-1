@@ -1,18 +1,36 @@
-body {
-  color: white;
-  background-color: #2d2c34;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
+:root {
+  --theme-main: $theme-main;
+  --theme-contrast: $theme-contrast;
+  --theme-contrast-darker: $theme-contrast-darker; }
 
-.text-center {
-  text-align: center;
-}
+body {
+  padding-top: 65px;
+  color: #e1e2ff;
+  background-color: #2a2c34;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
 
 a {
-  color: #ffc3c3;
-}
-a:visited,
-a:active,
-a:hover {
-  color: #ff8888;
-}
+  color: #8383aa;
+  text-decoration: none; }
+  a:visited, a:active {
+    color: #8383aa; }
+  a:hover {
+    color: white;
+    transform: scale(1.15); }
+
+.text-center {
+  text-align: center !important; }
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  top: 0;
+  left: 0;
+  background-color: #e1e2ff; }
+  .navbar ul {
+    display: flex; }
+  .navbar li {
+    padding: 0 2rem;
+    font-size: 24px;
+    list-style: none; }
