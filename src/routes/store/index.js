@@ -1,12 +1,12 @@
 const express = require("express");
 
 const items = require("./items");
-const resolveView = include("utils/view/resolveView");
+const templating = include("utils/templating");
 
 const store = express.Router();
 
 const storeLandingPageMiddleware = (req, res, next) => {
-  res.sendFile(resolveView("store"));
+  res.sendFile(templating.resolveTemplate("store"));
 };
 
 store.get("/", storeLandingPageMiddleware);

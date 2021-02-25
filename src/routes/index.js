@@ -1,11 +1,11 @@
 const express = require("express");
 
-const resolveView = include("utils/view/resolveView");
+const templating = include("utils/templating");
 
 const index = express.Router();
 
 index.get("/", (_, res, _2) => {
-  res.sendFile(resolveView());
+  res.sendFile(templating.resolveTemplate());
 });
 
 module.exports = index;

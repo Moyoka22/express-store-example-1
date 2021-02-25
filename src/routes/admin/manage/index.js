@@ -1,12 +1,12 @@
 const express = require("express");
 
-const resolveView = include("utils/view/resolveView");
+const templating = include("utils/templating");
 const store = require("./store");
 
 const manage = express.Router();
 
 const manageLandingPageMiddleware = (_, res, _2) => {
-  res.sendFile(resolveView("admin", "manage"));
+  res.sendFile(templating.resolveTemplate("admin", "manage"));
 };
 
 manage.get("/", manageLandingPageMiddleware);
